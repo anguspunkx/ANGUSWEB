@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programacion </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #111111;
+            padding: 10px 20px;
+            text-align: center;
+            max-width: 100%; /* Permite que la imagen se ajuste dentro del header */
+             text-align: center; /* Asegura que el contenido esté centrado */
+
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            padding: 15px 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .banner {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+        
+            background-color: #eeeeee;
+            border: 1px  #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            flex: 1 1 calc(33% - 20px);
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #111111;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            padding: 15px 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.proyecto img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+.proyecto img:hover {
+    transform: scale(1.05);
+}
+    </style>
+</head>
+<body>
+    <header>   
+        <img src="E:\PAGINA WEB ANGUS\imagenes\logo\LOGO.jpg" alt="Banner de Diseño Gráfico">
+    <nav>
+        
+        <ul>
+        <li><a href="file:///E:/PAGINA%20WEB%20ANGUS/index.html">INICIO</a></li> 
+        <li><a href="file:///E:/PAGINA%20WEB%20ANGUS/ruido.html">RUIDO</a></li>
+        <li><a href="file:///E:/PAGINA%20WEB%20ANGUS/tattoos.html">TATTOOS</a></li>
+        <li><a href="file:///E:/PAGINA%20WEB%20ANGUS/dise%C3%B1ografico.html">DISEÑO GRÁFICO</a></li>
+        <li><a href="file:///E:/PAGINA%20WEB%20ANGUS/programacion.html">PROGRAMACIÓN</a></li>
+        <li><a href="file:///E:/PAGINA%20WEB%20ANGUS/articulos.html">ARTÍCULOS PUNK</a></li>
+    </ul>
+    </nav>
+</header>
+    <div class="banner">
+        <img src="E:\PAGINA WEB ANGUS\imagenes\programacion\p1.jpg"  alt="logo">
+        <h1>ANDRES GUTIERREZ GAVIRIA</h1>
+        <h2>En este espacio  recopilo mis proyectos, habilidades y experiencia en desarrollo. 🚀</h2>
+
+        <h2>👾 ¿Qué encontrarás?
+            <p>  ✅ Proyectos que resuelven problemas reales.</p>
+                <p>   ✅ Habilidades en lenguas de progracion</p>
+                    <p>   ✅ Mi enfoque como estudiante de ingeniería de sistemas.</p>
+                        
+    </div>
+    <section id="portafolio">
+
+        <h2>Mi Portafolio</h2>
+        <div class="galeria">
+            <div class="proyecto">
+                <img src="imagenes/proyecto1.jpg" alt="Proyecto 1">
+                <h3>PROGRAMA DE ESCRITORIO- ALGORITMO</h3>
+                <p>FLOTA DE BUSES - JAVA (AÑO 2024)</p>
+                <a href="proyecto1.html" class="boton">Ver más</a>
+            </div>
+
+            <div class="proyecto">
+                <img src="imagenes/proyecto2.jpg" alt="Proyecto 2">
+                <h3>PROGRAMA DE ESCRITORIO INTERFAZ DE USUARIO </h3>
+                <p>INTERFAZ DE USUARIO -MYSQL- PHP (AÑO 2024)</p>
+                <a href="proyecto2.html" class="boton">Ver más</a>
+            </div>
+
+            <div class="proyecto">
+                <img src="imagenes/proyecto2.jpg" alt="Proyecto 2">
+                <h3>PAGINA WEB</h3>
+                <p>GRITOS SUBERSIVOS - DREAMWEAVER (AÑO 2017)</p>
+                <a href="proyecto2.html" class="boton">Ver más</a>
+            </div>
+
+            <div class="proyecto">
+                <img src="imagenes/proyecto2.jpg" alt="Proyecto 2">
+                <h3>PORTAFOLIO WEB DE FOTOGRAFIAS</h3>
+                <p>HTML- CSS- JAVASCRIPT- REACT (2025)</p>
+                <a href="proyecto2.html" class="boton">Ver más</a>
+            </div>
+
+            <div class="proyecto">
+                <img src="imagenes/proyecto2.jpg" alt="Proyecto 2">
+                <h3>PORTAFOLIO DE PRODUCTOS</h3>
+                <p>HTML- CSS- JAVASCRIPT ( 2025)</p>
+                <a href="proyecto2.html" class="boton">Ver más</a>
+            </div>
+           
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>© 2025 Underground Angus Punk. Todos los derechos reservados.</p>
+        <p>Contáctanos: anguspunkx@punkmail.com | Tel: +57 312 298 3415</p>
+    </footer>
+</body>
+</html>

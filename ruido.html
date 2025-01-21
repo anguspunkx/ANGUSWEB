@@ -14,68 +14,108 @@
             background-color: #111111;
             padding: 10px 20px;
             text-align: center;
-            max-width: 100%; /* Permite que la imagen se ajuste dentro del header */
-             text-align: center; /* Asegura que el contenido esté centrado */
-
         }
-        nav {
-            background-color: #111111;
+        header img {
+            max-width: 100%;
+            height: auto;
         }
         nav ul {
             list-style: none;
             margin: 0;
             padding: 0;
             display: flex;
+            justify-content: center;
+            gap: 20px;
         }
         nav ul li {
-            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
         nav ul li a {
             color: white;
             text-decoration: none;
+            font-size: 18px;
         }
-        .banner {
-            background-color: #f5f5f5;
-            padding: 20px;
-            text-align: center;
+        nav ul li img {
+            width: 24px;
+            height: 24px;
         }
-        .banner img {
-            max-width: 100%;
-            height: auto;
-        }
-        .graphic-section {
+
+        .portfolio-section {
             padding: 20px;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            background-color: #eeeeee;
+            flex-direction: column;
+            gap: 20px;
         }
-        .graphic-card {
-            background-color: white;
-            border: 2px solid #111111;
-            border-radius: 10px;
-            margin: 10px;
-            padding: 15px;
-            width: 300px;
-            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-            text-align: center;
+        .portfolio-item {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
-        .graphic-card:hover {
-            transform: scale(1.05);
+        .portfolio-item:hover {
+            transform: scale(1.03);
         }
-        .graphic-card img {
-            max-width: 100%;
-            border-radius: 10px;
-            height: 200px;
+        .portfolio-item img {
+            width: 15%;
+            border-radius: 8px;
             object-fit: cover;
+            transition: transform 0.3s ease;
         }
-        .graphic-card h3 {
-            margin: 10px 0;
-            color: #111111;
+        .portfolio-item img:hover {
+            transform: scale(1.1);
         }
-        .graphic-card p {
-            color: #333333;
+        .portfolio-item .description {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .portfolio-item h3 {
+            margin: 0;
+            color: #111;
+        }
+        .portfolio-item p {
+            margin: 5px 0 0;
+            color: #555;
+        }
+        .portfolio-item .comment-form {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .comment-form label {
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .comment-form textarea {
+            width: 100%;
+            height: 60px;
+            margin-bottom: 10px;
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .comment-form button {
+            background-color: #111111;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .comment-form button:hover {
+            background-color: #444;
         }
         footer {
             background-color: #111111;
@@ -83,27 +123,13 @@
             text-align: center;
             padding: 10px 0;
         }
-        .contact-menu {
-            background-color: #222222;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-        .contact-menu a {
-            color: #ffcc00;
-            margin: 0 10px;
-            text-decoration: none;
-        }
     </style>
 </head>
 <body>
     <header>
-      <img src="E:\PAGINA WEB ANGUS\imagenes\logo\LOGO.jpg"  alt="logo">
-        
+        <img src="E:/PAGINA%20WEB%20ANGUS/imagenes/logo/LOGO.jpg" alt="Logo">
         <nav>
-            <ul>
-            <li><a href="file:///E:/PAGINA%20WEB%20ANGUS/index.html">INICIO</a></li>    
+            <ul>  
             <li><a href="file:///E:/PAGINA%20WEB%20ANGUS/ruido.html">RUIDO</a></li>
             <li><a href="file:///E:/PAGINA%20WEB%20ANGUS/tattoos.html">TATTOOS</a></li>
             <li><a href="file:///E:/PAGINA%20WEB%20ANGUS/dise%C3%B1ografico.html">DISEÑO GRÁFICO</a></li>
@@ -113,45 +139,96 @@
         </nav>
     </header>
 
-    <section id="portafolio" class="graphic-section">
-
-    <div class="graphic-card">
-        <img src="E:\PAGINA WEB ANGUS\imagenes\ruido\MGE.jpg" alt="Diseño 1">
-        <h3>GOREGRIND</h3>
-        <p>2024</p>
-    </div>
-
-    <div class="graphic-card">
-        <img src="E:\PAGINA WEB ANGUS\imagenes\ruido\FPF.jpeg" alt="Diseño 2">
-        <h3>MINCECORE</h3>
-        <p>2024</p>
-    </div>
-
-    <div class="graphic-card">
-        <img src="E:\PAGINA WEB ANGUS\imagenes\ruido\IP.png" alt="Diseño 3">
-        <h3>PUNK</h3>
-        <p>2024</p>
-    </div>
-
-    <div class="graphic-card">
-        <img src="E:\PAGINA WEB ANGUS\imagenes\ruido\SPLIT-ALEBOZIIA.jpeg" alt="Diseño 4">
-        <h3>PUNK </h3>
-        <p>2015</p>
-    </div>
-
-    <div class="graphic-card">
-        <img src="E:\PAGINA WEB ANGUS\imagenes\ruido\ALEBOZIIA.jpeg" alt="Diseño 5">
-        <h3>PUNK</h3>
-        <p>2023</p>
-    </div>
-
-    <div class="graphic-card">
-        <img src="E:\PAGINA WEB ANGUS\imagenes\ruido\CAREGAMIN.jpeg" alt="Diseño 6">
-        <h3>PUNK</h3>
-        <p>2023</p>
-    </div>
-</section>      
-        
-    </div>
+    <!-- Portafolio -->
+    
+    <section id="portafolio" class="portfolio-section">
+        <div class="portfolio-item">
+            <img src="E:/PAGINA%20WEB%20ANGUS/imagenes/ruido/MGE.jpg" alt="GOREGRIND">
+            <div class="description">
+                <h3>MUTACION GENETICA EXPERIMENTAL</h3>
+                <h4>2023</h4>
+                <p>Proyecto conformado por Harol y Angus Punk.</p>
+            </div>
+            <div class="comment-form">
+                <label for="comment1">Deja tu comentario:</label>
+                <textarea id="comment1" placeholder="Escribe tu comentario..."></textarea>
+                <button type="submit">Enviar</button>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="E:/PAGINA%20WEB%20ANGUS/imagenes/ruido/FPF.jpeg" alt="MINCECORE">
+            <div class="description">
+                <h3>FERMENTED PUTRID FLUIDS</h3>
+                <h4>2025</h4>
+                <a href="">ESCUCHAR</a>
+                <p>Proyecto formado por Peter Punk en Medellín, Antioquia, y Angus Punk en Cali.</p>
+            </div>
+            <div class="comment-form">
+                <label for="comment2">Deja tu comentario:</label>
+                <textarea id="comment2" placeholder="Escribe tu comentario..."></textarea>
+                <button type="submit">Enviar</button>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="E:/PAGINA%20WEB%20ANGUS/imagenes/ruido/IP.png" alt="PUNK">
+            <div class="description">
+                <h3>INMORAL PERVERSION</h3>
+                <h4>2025</h4>
+                <a href="">ESCUCHAR</a>
+                <p>Banda de punk de Cali conformada por Liza Martínez en los gritos y Angus Punk en guitarras y baterías.</p>
+            </div>
+            <div class="comment-form">
+                <label for="comment3">Deja tu comentario:</label>
+                <textarea id="comment3" placeholder="Escribe tu comentario..."></textarea>
+                <button type="submit">Enviar</button>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="E:/PAGINA%20WEB%20ANGUS/imagenes/ruido/SPLIT-ALEBOZIIA.jpeg" alt="PUNK">
+            <div class="description">
+                <h3>ALEBOZIIA-RABIA URBANA (SPLIT 2024)</h3>
+                <h4>2023</h4>
+                <a href="">ESCUCHAR</a>
+                <p>Split grabado en concierto "La Dexoriente Punk en Kali Sucia Underground", mezclado y grabado por Steven Saenz, en Cali.</p>
+            </div>
+            <div class="comment-form">
+                <label for="comment4">Deja tu comentario:</label>
+                <textarea id="comment4" placeholder="Escribe tu comentario..."></textarea>
+                <button type="submit">Enviar</button>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="E:/PAGINA%20WEB%20ANGUS/imagenes/ruido/ALEBOZIIA.jpeg" alt="PUNK">
+            <div class="description">
+                <h3>ALEBOZIIA - "ODIOSA GUERRA"</h3>
+                <h4>2014</h4>
+                <a href="">ESCUCHAR</a>
+                <p>Hardcore de Rionegro, Antioquia. Sencillo grabado en Ecos en el año 2014.</p>
+            </div>
+            <div class="comment-form">
+                <label for="comment5">Deja tu comentario:</label>
+                <textarea id="comment5" placeholder="Escribe tu comentario..."></textarea>
+                <button type="submit">Enviar</button>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="E:/PAGINA%20WEB%20ANGUS/imagenes/ruido/CAREGAMIN.jpeg" alt="PUNK">
+            <div class="description">
+                <h3>CAREGAMIN S/T</h3>
+                <h4>2023</h4>
+                <a href="">ESCUCHAR</a>
+                <p>Proyecto realizado en 2024 para el parsero CAREGAMIN 3D 8 Punks, Armenia Hardcore, compartiéndonos 2 temas de su repertorio, sonido punk callejero.</p>
+            </div>
+            <div class="comment-form">
+                <label for="comment6">Deja tu comentario:</label>
+                <textarea id="comment6" placeholder="Escribe tu comentario..."></textarea>
+                <button type="submit">Enviar</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© 2025 Underground Angus Punk. Todos los derechos reservados.</p>
+        <p>Contáctanos: anguspunkx@punkmail.com | Tel: +57 312 298 3415</p>
+    </footer>
 </body>
 </html>
